@@ -10,9 +10,6 @@ namespace Netzplantechnik.Models
     {
 
         static public List<Process> Processes { get; set; } = new List<Process>();
-        static public List<Process> CriticalPath { get; set; } = new List<Process>();
-
-
 
     }
 }

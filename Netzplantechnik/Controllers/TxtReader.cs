@@ -15,6 +15,10 @@ namespace Netzplantechnik.Controllers
 		static string path;
 		static string inputText;
 		
+		/// <summary>
+		/// This method create list of processes in ProcessRepo class from text file in CSV format 
+		/// </summary>
+		/// <param name="inputFile">name of file in same directory</param>
         internal static void CreateProcesses(string inputFile)
         {
 			path = Directory.GetCurrentDirectory();

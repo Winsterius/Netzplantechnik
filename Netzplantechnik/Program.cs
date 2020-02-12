@@ -36,7 +36,7 @@ namespace Netzplantechnik
                 Console.WriteLine("wrong arguments");
             }
 
-            PngOutput.CreatePngBild(input, output);
+            PngOutput.CreatePngFile(input, output);
 
             ProcessRepo p = new ProcessRepo();
 

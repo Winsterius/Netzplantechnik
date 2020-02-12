@@ -34,18 +34,14 @@ namespace Netzplantechnik.Models
             Description = description;
             Duration = duration;
             PreviewProcessName = preview;
-
-
+            //At the first only FEZ value will be defined
             FAZ = 0;
             FEZ = FAZ + Duration;
             GP = 0;
             FP = 0;
             SAZ = 0;
             SEZ = 0;
-            
-            //FEZ = FAZ + duration;
-            //SEZ = SAZ + duration;
-            //GP = SAZ - FAZ;
+
         }
 
 
@@ -106,16 +102,6 @@ namespace Netzplantechnik.Models
 
         public void SetGP_FP()
         {
-
-            //for (int i = ProcessRepo.Processes.Count - 1; i >= 0; i--)
-            //{
-            //    if (ProcessRepo.Processes[i].NextProcess.Count != 0)
-            //    {
-            //        ProcessRepo.Processes[i].FP = ProcessRepo.Processes[i].NextProcess.Min(pr => pr.FAZ) - ProcessRepo.Processes[i].FEZ;
-            //        ProcessRepo.Processes[i].GP = ProcessRepo.Processes[i].SEZ - ProcessRepo.Processes[i].FEZ;
-
-            //    }
-            //}
 
             foreach (Process p in ProcessRepo.Processes)
             {
